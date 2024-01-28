@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" con*tent="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="result">
+      <input type="text" placeholder="Result" id = "result" readonly>
+      <input type="button" value="C" id = "clearButton" onclick="clearDisplay()">
+    </div>
+    <div class="firstRow">
+      <input type="button" value="1" onclick="toDisplay(1)">
+      <input type="button" value="2" onclick="toDisplay(2)">
+      <input type="button" value="3" onclick="toDisplay(3)">
+      <input type="button" value="+" onclick="toDisplay(`+`)">
+    </div>
+    <div class="secondRow">
+      <input type="button" value="4" onclick="toDisplay(4)">
+      <input type="button" value="5" onclick="toDisplay(5)">
+      <input type="button" value="6" onclick="toDisplay(6)">
+      <input type="button" value="-" onclick="toDisplay(`-`)">
+    </div>
+    <div class="thirdRow">
+      <input type="button" value="7" onclick="toDisplay(7)">
+      <input type="button" value="8" onclick="toDisplay(8)">
+      <input type="button" value="9" onclick="toDisplay(9)">
+      <input type="button" value="*" onclick="toDisplay(`*`)">
+    </div>
+    <div class="fourthRow">
+      <input type="button" value="." onclick="toDisplay(`.`)">
+      <input type="button" value="0" onclick="toDisplay(0)">
+      <input type="button" id="equals" value="=" onclick='calculate()'>
+      <input type="button" value="/" onclick="toDisplay(`/`)">
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
